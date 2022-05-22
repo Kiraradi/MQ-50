@@ -37,7 +37,7 @@ ul {
 
 .header {
 	background-color: #22333b;
-	background: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
+	background: url("../img/banner-bg.jpg");
 	background-position: -10px -6px;
 	background-repeat: no-repeat;
 	background-size: cover;
