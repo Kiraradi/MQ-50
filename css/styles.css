@@ -115,8 +115,8 @@ ul {
 
 .content {
 	display: flex;
-	width: 100%;
-	padding: 60px 0 0;
+	max-width: 1200px;
+	padding: 60px 15px 0;
 	margin-right: auto;
 	margin-left: auto;
 	flex-wrap: wrap; 
@@ -126,13 +126,11 @@ ul {
 
 .section {
 	width: 100%;
-	margin-bottom: 62px;
+	margin-top: 57px;
 }
 
 .section-title {
-	font-size: 14px;
-	margin-left: auto;
-	margin-right: auto;
+	font-size: 20px;
 	text-transform: uppercase;
 	margin: 0;
 	text-align: center;
@@ -144,7 +142,7 @@ ul {
 	width: 66px;
 	height: 3px;
 	background-color: #e1d9bd;
-	margin: 9px auto 23px;
+	margin: 7px auto 29px;
 }
 
 .trends {
@@ -184,7 +182,7 @@ ul {
 }
 
 .trend-content {
-	padding: 37px;
+	padding: 35px 29px 28px 33px;
 	border: 4px solid #b59f5b;
 	box-sizing: border-box;
 }
@@ -206,11 +204,19 @@ ul {
 	text-decoration: none;
 }
 
+.trend-heshtag-a:hover {
+	text-decoration: underline;
+}
+
 .trend-content-p {
 	color: #ffffff;
 	font-size: 20px;
 	margin: 0;
 	padding: 0;
+}
+
+.trend-content-p:hover {
+     color: #b59f5b;
 }
 
 .trend-box-1 {
@@ -230,7 +236,7 @@ ul {
 }
 
 .main {
-	width: 778px;
+	width: 67%;
 }
 
 .article {
@@ -324,8 +330,8 @@ ul {
 }
 
 .aside {
-	width: 272px;
-	margin-left: 122px;
+	width: calc(33% - 114px);
+	margin-left: 114px;
 }
 
 .aside-block {
@@ -525,10 +531,95 @@ ul {
 	color: #b59f5b;
 }
 
+.goods {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 23px;
+	margin-right: 23px;
+}
+
+.goods-section {
+	display: flex;
+	flex-direction: column;
+}
+
+.goods-content {
+	max-width: 300px;
+	display: flex;
+	justify-content: start;
+	flex-wrap: wrap;
+	outline: 3px solid #b59f5b;
+	outline-offset: 20px ;
+	align-items: stretch;
+	flex-grow: 1;
+}
+
+.goods-content-h2 {
+     font-size: 20px;
+	 margin: 15px 0 5px;
+	 padding: 0;
+	 text-transform: uppercase;
+}
+
+.goods-content-p {
+	font-size: 15px;
+	margin: 0 0 24px;
+	padding: 0;
+	font-family: Regular;
+}
+
+.goods-content-p-a {
+	color: #b59f5b;
+}
+
+.goods-content-p-a:hover {
+	text-decoration: underline;
+}
+
+.goods-shop {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 300px;
+}
+
+.goods-shop-1 {
+	padding-bottom: 49px;
+}
+
+.goods-shop-2 {
+	padding-bottom: 4px;
+}
+
+.goods-shop-3 {
+	padding-bottom: 30px;
+}
+
+
+.goods-shop-price {
+	display: flex;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.goods-shop-price-old {
+	text-decoration: line-through;
+	font-size: 14px;
+}
+
+.goods-shop-rub {
+	margin-left: 4px;
+}
+
+.goods-content-button {
+	width: 47%;
+	max-height: 50px;	
+}
+
 .footer {
-	width: 1170px;
+	max-width: 1200px;
 	padding: 0 15px;
-	margin: 61px auto 73px auto; 
+	margin: 90px auto 73px auto; 
 }
 
 .social {
