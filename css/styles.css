@@ -128,6 +128,12 @@ ul {
 		margin-left: 30px;
 	}
 
+	.menu_list_sandwich {
+		background-color: #eeeeee;
+		width: 23px;
+		height: 4px;
+	}
+
 	.sandwich:focus + .menu_list {
 		display: flex;
 	}
@@ -160,10 +166,8 @@ ul {
         padding: 0 35px;
 	}
 
-	.menu_list_sandwich {
-		background-color: #eeeeee;
-		width: 23px;
-		height: 4px;
+	.logo_mobile {
+		display: none;
 	}
 
 	.logo-img {
@@ -174,6 +178,32 @@ ul {
 		order: 0;
 	}
  
+}
+
+@media (max-width: 640px) {
+	.header {
+		background-image: url("../img/banner-mobile.jpg");
+		background-position: 0 ;
+		padding: 32px 0 211px 0;
+	}
+
+	.logo-img {
+		display: none;
+	}
+
+	.logo_mobile_img {
+		margin-top: 173px;
+		margin-left: auto;
+   	    margin-right: auto;
+        display: block;
+	}
+
+	.header__content {
+		font-size: 26px;
+		padding: 0 40px;
+		line-height: 36px;
+		margin-top: 34px;
+	}
 }
 
 .content {
@@ -253,6 +283,9 @@ ul {
 	.sandwich {
 		display: none;
 	} 
+	.logo_mobile {
+		display: none;
+	}
 }
 
 
@@ -309,6 +342,18 @@ ul {
 .trend-box-4 {
 	background-image: url(../img/trend4.jpg);
 }
+@media (max-width: 1200px) {
+	.trends {
+		flex-wrap: wrap;
+		row-gap: 4px;
+	}
+	.trend {
+		width: 100%;
+		height: 247px;
+		background-position: bottom;
+	}
+	
+}
 
 @media (min-width: 641px) and (max-width: 1200px) {
     .section {
@@ -324,7 +369,6 @@ ul {
 	}
 
 	.trends {
-		flex-wrap: wrap;
 		gap: 4px;
 	}
 
@@ -346,7 +390,41 @@ ul {
 	.trend-content-p {
 		font-size: 17px;
 	}
+}
 
+@media (max-width:640px) {
+
+	.section {
+		margin-top: 39px;
+	}
+
+	.section-title {
+		font-size: 16px;
+	}
+
+	.section-title::after {
+		margin-bottom: 25px;
+	}
+
+	.trend {
+		height: 231px;;
+		padding-left: 14px;
+		padding-right: 14px;
+	}
+
+	.trend-content {
+		padding-left: 19px;
+		padding-bottom: 23px;
+		padding-top: 29px;
+	}
+
+	.trend-heshtag {
+		margin-bottom: 5px;
+	}
+
+	.trend-content-p {
+		font-size: 16px;
+	}
 }
 
 .main {
@@ -732,15 +810,7 @@ ul {
 	max-height: 50px;	
 }
 
-@media (min-width: 641px) and (max-width: 1200px) {
-	.content {
-		padding: 44px 35px 0;
-	}
-
-	.main {
-		width: calc(100% - 307px);
-	}
-
+@media (max-width: 1200px) {
 	.article {
 		flex-direction: column;
 	}
@@ -754,13 +824,43 @@ ul {
 		width: 100%;
 	}
 
+	.article::after {
+		display: block;
+		content: "";
+		width: 100%;
+		height: 3px;
+		background-color: #eeeeee;
+		margin: 19px auto 0;
+	}
+
+	.goods {
+	    flex-wrap: wrap;
+		row-gap: 52px;
+	}
+
+}
+
+@media (min-width: 641px) and (max-width: 1200px) {
+	.content {
+		padding: 44px 35px 0;
+	}
+
+	.main {
+		width: calc(100% - 307px);
+	}
+
 	.aside {
 		margin-left: 35px;
+	}
+
+	.article:last-child::after {
+		display: none;
 	}
 
 	.article__hashtag {
 		margin-top: 10px;
 	}
+
 	.article__heading {
 		font-size: 17px;
 	}
@@ -773,27 +873,13 @@ ul {
 		margin-top: 43px;
 	}
 
-	.article::after {
-		display: block;
-		content: "";
-		width: 100%;
-		height: 3px;
-		background-color: #eeeeee;
-		margin: 19px auto 0;
-	}
-
-	.article:last-child::after {
-		display: none;
-	}
-
 	.section_2 {
 		margin-top: 63px;
 	}
 
-	.goods {
-        flex-wrap: wrap;
+	.goods {        
 		column-gap: 68px;
-		row-gap: 52px;
+		
 		margin-top: 26px;
 		justify-content: flex-start;
 	}
@@ -814,7 +900,89 @@ ul {
 	.goods-shop-3 {
 		padding-bottom: 12px;
 	}
+}
 
+@media (max-width: 640px) {
+	.content {
+		padding-top: 40px;
+	}
+
+	.main {
+		width: 100%;
+	}
+
+	.article {
+		margin-top: 35px;
+	}
+
+	.article__hashtag {
+		margin-top: 8px;
+	}
+
+	.article_h2 {
+		margin-top: 7px;
+        line-height: 18px;
+        margin-bottom: 17px;
+	}
+
+	.article__heading {
+		font-size: 16px;
+	}
+
+	.article__content_text {
+		margin-top: 13px;
+		line-height: 20px;
+	}
+
+	.article__content_text_p {
+		font-size: 14px;
+	}
+
+	.aside {
+		margin-top: 40px;
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.aside-title {
+		font-size: 16px;
+	}
+
+	.new__search {
+		margin-top: 68px;
+	}
+
+	.new__search-group {
+		width: calc(100% - 47px);
+	}
+
+	.search-field {
+		width: 100%;
+	}
+
+	.new__posts {
+		margin-bottom: 40px;
+	}
+
+	.mailing {
+		margin-bottom: 40px;
+	}
+
+	.tags {
+		margin-bottom: 29px;
+	}
+
+	.tags_list_item {
+		margin: 0 4px 11px 0;
+	}
+
+	.themes {
+		margin-top: 24px;
+	}
+
+	.section_2 {
+		margin-top: 28px;
+	}
 }
 
 .footer {
